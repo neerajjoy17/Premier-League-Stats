@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "premierleague.app", "premierleague.app\premierleague.app.csproj", "{A9192FA7-F7DE-4A21-B37F-FCB043ACB506}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DAAA77D9-31E9-47D2-B990-563571CF73D3} = {DAAA77D9-31E9-47D2-B990-563571CF73D3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "premierleague.core", "premierleague.core\premierleague.core.csproj", "{4D6F7725-4B3C-4B11-91DC-1AC2352037AC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{74EF8578-F54C-4A1E-80BE-889A7E0F2A10} = {74EF8578-F54C-4A1E-80BE-889A7E0F2A10}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "premierleague.service", "premierleague.service\premierleague.service.csproj", "{DAAA77D9-31E9-47D2-B990-563571CF73D3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4D6F7725-4B3C-4B11-91DC-1AC2352037AC} = {4D6F7725-4B3C-4B11-91DC-1AC2352037AC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "premierleague.efcore", "premierleague.efcore\premierleague.efcore.csproj", "{74EF8578-F54C-4A1E-80BE-889A7E0F2A10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9192FA7-F7DE-4A21-B37F-FCB043ACB506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9192FA7-F7DE-4A21-B37F-FCB043ACB506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9192FA7-F7DE-4A21-B37F-FCB043ACB506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9192FA7-F7DE-4A21-B37F-FCB043ACB506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D6F7725-4B3C-4B11-91DC-1AC2352037AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D6F7725-4B3C-4B11-91DC-1AC2352037AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D6F7725-4B3C-4B11-91DC-1AC2352037AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D6F7725-4B3C-4B11-91DC-1AC2352037AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAAA77D9-31E9-47D2-B990-563571CF73D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAAA77D9-31E9-47D2-B990-563571CF73D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAAA77D9-31E9-47D2-B990-563571CF73D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAAA77D9-31E9-47D2-B990-563571CF73D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74EF8578-F54C-4A1E-80BE-889A7E0F2A10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74EF8578-F54C-4A1E-80BE-889A7E0F2A10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74EF8578-F54C-4A1E-80BE-889A7E0F2A10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74EF8578-F54C-4A1E-80BE-889A7E0F2A10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

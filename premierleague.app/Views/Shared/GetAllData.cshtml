@@ -1,0 +1,25 @@
+﻿@using premierleague.core.Entities;
+@model IEnumerable<Match>;
+<thead>
+    <tr>
+        <td>Match No.</td>
+        <td>Home Team</td>
+        <td>Goals (Home)</td>
+        <td>Goals (Away)</td>
+        <td>Away Team</td>
+        <td>Season</td>
+    </tr>
+</thead>
+<tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.home</td>
+            <td>@item.homegoals</td>
+            <td>@item.awaygoals</td>
+            <td>@item.away</td>
+            <td>@item.season</td>
+        </tr>
+    }
+</tbody>

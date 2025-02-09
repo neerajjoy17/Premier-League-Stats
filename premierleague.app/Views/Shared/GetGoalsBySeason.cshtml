@@ -1,0 +1,30 @@
+﻿@using premierleague.core.Dto
+@model List<GoalsBySeason>
+<div class="text-left">
+    <h4 class="display-4">Goals By Season</h4>
+    <div class="card">
+        <div class="card-header">
+            <div class="chart1">
+                <canvas id="myChart2" width="400" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-left">
+    <h4 class="display-4">Home and Away Goal Comparison</h4>
+    <div class="card">
+        <div class="card-header">
+            <div class="chart2">
+                <canvas id="myChart3" width="400" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    var modelData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model));
+</script>
+<script src="~/js/GetGoalsBySeason.js"></script>
