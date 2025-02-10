@@ -45,5 +45,11 @@ namespace premierleague.app.Controllers
             result.Sort((a,b) => a.season.CompareTo(b.season));
             return PartialView("GetGoalsBySeason", result);
         }
+
+        public async Task<IActionResult> GetTotalPoints()
+        {
+            var result = await _dataService.GetTotalPoints();
+            return View("TeamStats", result);
+        }
     }
 }

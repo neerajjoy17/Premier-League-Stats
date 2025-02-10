@@ -27,5 +27,10 @@ namespace premierleague.service.Service
         {
             return await _dataRepository.GetGoalsBySeason();
         }
+
+        public async Task<List<Team>> GetTotalPoints()
+        {
+            return await _dataRepository.GetTeamStats();
+        }
     }
 }
