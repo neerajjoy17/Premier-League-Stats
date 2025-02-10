@@ -1,0 +1,32 @@
+﻿@using premierleague.core.Dto
+@model List<Team>
+
+@{
+    ViewData["Title"] = "Stats Page";
+}
+
+<div id="chartContainer">
+<div class="text-center">
+    <h1 class="display-4">Team Stats</h1>
+</div>
+<div class="text-left">
+    <h4 class="display-4">Arsenal's Overall Record</h4>
+    <div class="card">
+        <div class="card-header">
+            <div class="chart1">
+                <canvas id="myChart2" width="400" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    var modelData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model));
+</script>
+
+<!-- Use jQuery to load the chart data via AJAX -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/js/Stats.js"></script>

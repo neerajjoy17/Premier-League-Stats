@@ -13,5 +13,7 @@ namespace premierleague.efcore.IRepository
         public Task<List<Match>> GetAllData();
 
         public Task<List<GoalsBySeason>> GetGoalsBySeason();
+
+        public Task<List<Team>> GetTeamStats();
     }
 }

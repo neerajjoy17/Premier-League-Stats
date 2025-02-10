@@ -13,5 +13,7 @@ namespace premierleague.service.IService
         public Task<List<Match>> GetAllData();
 
         public Task<List<GoalsBySeason>> GetGoalsBySeason();
+
+        public Task<List<Team>> GetTotalPoints();
     }
 }
